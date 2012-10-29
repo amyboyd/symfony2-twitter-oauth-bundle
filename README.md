@@ -11,12 +11,15 @@
 
 ## Install ##
 
-* If you use Git, run `git submodule add  -- "git clone https://bitbucket.org/addictionworldwide/twitter-oauth-bundle-for-symfony2.git" "src/"`
+* If you use Git, run `git submodule add https://alienmegacorp@bitbucket.org/addictionworldwide/twitter-oauth-bundle-for-
+symfony2.git Symfony/src/AW/Bundle/TwitterOAuthBundle`
 
 * If you don't use Git, download the source and put it into your bundles
   directory (typically "src/")
 
-* Enable AWTwitterOAuthBundle in your app/AppKernel.php
+* Enable AWTwitterOAuthBundle in your `app/AppKernel.php`
+
+* Copy the contents of `Resources/config/parameters.yml.sample` to your own `app/config/parameters.yml`
 
 * Review `app/console doctrine:schema:update --dump-sql`
 
