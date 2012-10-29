@@ -1,6 +1,5 @@
 ## Sample Use In A Controller Action ##
 
-
     $twitterService = $this->get('aw_twitter_oauth');
     $twitterUser = $twitterService->getUserFromSession();
     if (!$twitterUser) {
@@ -11,11 +10,10 @@
 
 ## Install ##
 
-* If you use Git, run `git submodule add https://alienmegacorp@bitbucket.org/addictionworldwide/twitter-oauth-bundle-for-
-symfony2.git Symfony/src/AW/Bundle/TwitterOAuthBundle`
+* If you use Git, run `git submodule add https://bitbucket.org/addictionworldwide/twitter-oauth-bundle-for-symfony2.git path/to/bundles/AW/Bundle/TwitterOAuthBundle`
 
 * If you don't use Git, download the source and put it into your bundles
-  directory (typically "src/")
+  directory.
 
 * Enable AWTwitterOAuthBundle in your `app/AppKernel.php`
 
