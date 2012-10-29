@@ -1,0 +1,7 @@
+aw_twitter_oauth_auth:
+    pattern:  /awtwitteroauthbundle/auth
+    defaults: { _controller: AWTwitterOAuthBundle:Default:auth }
+
+aw_twitter_oauth_callback:
+    pattern:  /awtwitteroauthbundle/callback
+    defaults: { _controller: AWTwitterOAuthBundle:Default:callback }

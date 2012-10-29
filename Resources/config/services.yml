@@ -1,0 +1,4 @@
+services:
+    aw_twitter_oauth:
+        class: AW\Bundle\TwitterOAuthBundle\Service
+        arguments: [@doctrine.orm.entity_manager, @session]

@@ -1,0 +1,6 @@
+parameters:
+    twitter_key:            ...
+    twitter_secret:         ...
+    twitter_request_url:    https://api.twitter.com/oauth/request_token
+    twitter_authorize_url:  https://api.twitter.com/oauth/authorize
+    twitter_token_url:      https://api.twitter.com/oauth/access_token
