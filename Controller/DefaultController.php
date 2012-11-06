@@ -16,7 +16,7 @@ class DefaultController extends Controller
     {
         $this->requireContinueParam($request);
 
-        $tw = new Lib\TwitterOauth(
+        $tw = new Lib\TwitterOAuth(
             $this->container->getParameter('twitter_key'),
             $this->container->getParameter('twitter_secret'));
 
@@ -40,7 +40,7 @@ class DefaultController extends Controller
     {
         $this->requireContinueParam($request);
 
-        $tw = new Lib\TwitterOauth(
+        $tw = new Lib\TwitterOAuth(
             $this->container->getParameter('twitter_key'),
             $this->container->getParameter('twitter_secret'),
             $this->get('session')->get('twitter_tmp_token'),
