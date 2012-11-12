@@ -156,16 +156,36 @@ class User
         return $this->followersCount;
     }
 
-    public function getProfileImageUrl()
+    /**
+     * @param string $size One of bigger - 73px by 73px
+     *                            normal - 48px by 48px
+     *                            mini - 24px by 24px
+     * @return string
+     */
+    public function getProfileImageUrl($size = 'normal')
     {
-        return $this->profileImageUrl;
+        return $this->changeImageUrlSize($this->profileImageUrl, $size);
     }
 
+    /**
+     * @param string $size One of bigger - 73px by 73px
+     *                            normal - 48px by 48px
+     *                            mini - 24px by 24px
+     * @return string
+     */
     public function getProfileImageUrlHttps()
     {
-        return $this->profileImageUrlHttps;
+        return $this->changeImageUrlSize($this->profileImageUrlHttps, $size);
     }
 
+    private function changeImageUrlSize($url, $size)
+    {
+        return preg_replace('/(normal|bigger|mini)(\.[a-zA-Z]{3,4})$/i', $size . '$2', $url);
+    }
+
+    /**
+     * @return boolean Whether the user still has the default Twitter profile photo.
+     */
     public function getDefaultProfileImage()
     {
         return $this->defaultProfileImage;
