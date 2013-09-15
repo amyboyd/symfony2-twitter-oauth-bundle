@@ -10,7 +10,7 @@
 
 ## Install ##
 
-* If you use Git, run `git submodule add https://bitbucket.org/addictionworldwide/twitter-oauth-bundle-for-symfony2.git path/to/bundles/AW/Bundle/TwitterOAuthBundle`
+* If you use Git, run `git submodule add git@github.com:amyboyd/symfony2-twitter-oauth-bundle.git path/to/bundles/AW/Bundle/TwitterOAuthBundle`
 
 * If you don't use Git, download the source and put it into your bundles
   directory.
